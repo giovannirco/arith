@@ -20,7 +20,7 @@ COPY web ./web
 # Stage 2: Ruby, the installed gems and the app, run as a non-root user.
 # Nothing is written at runtime, so the root filesystem can be read-only.
 FROM ruby:4.0.7-alpine3.24@sha256:1ca7cb33e970630d571e0da6140e0bc925faec8f1f8f51f9f2cdf5e5f5eed7c9
-LABEL org.opencontainers.image.source="https://github.com/giovannirco/arith" \
+LABEL org.opencontainers.image.source="https://github.com/giovannirco/arith-ruby" \
       org.opencontainers.image.description="Integer arithmetic over HTTP: four endpoints, a page, metrics, traces and logs." \
       org.opencontainers.image.licenses="MIT"
 # BUNDLE_USER_HOME stops Bundler looking for a writable home directory.

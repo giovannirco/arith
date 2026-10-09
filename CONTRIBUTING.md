@@ -7,7 +7,7 @@
 - Gems move by hand: `bundle update <gem>`, then `make test`, with the `Gemfile.lock` change in the same commit.
 - One concern per commit, with a [conventional](https://www.conventionalcommits.org) subject: `feat:`, `fix(helm):`, `docs:`, `ci:`.
 - Image tags stay plain integers: `1`, `2`. Do not add `v` prefixes or semver to image tags.
-- The chart version in `deploy/helm/arith/Chart.yaml` is semver. Bump it in the commit that changes a template or a default; CI will not publish a version twice.
+- The chart version in `deploy/helm/arith-ruby/Chart.yaml` is semver. Bump it in the commit that changes a template or a default; CI will not publish a version twice.
 - A Helm value and a Kustomize component come together: add a toggle to one, add it to the other.
 
 Open an issue or a pull request in plain words: what you ran, what you expected, what happened.
