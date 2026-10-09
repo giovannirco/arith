@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+# Puma through the app's bundle, without the bundle CLI (which wants a
+# writable home directory the container does not have).
+require_relative "../config/boot"
+load Gem.bin_path("puma", "puma")

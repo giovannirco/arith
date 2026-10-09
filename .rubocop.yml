@@ -1,0 +1,7 @@
+# Omakase Ruby styling for Rails, as `rails new` sets it up.
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+    - "coverage/**/*"
