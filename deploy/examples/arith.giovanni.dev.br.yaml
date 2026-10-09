@@ -5,6 +5,12 @@
 #   helm install arith deploy/helm/arith --namespace arith --create-namespace \
 #     -f deploy/examples/arith.giovanni.dev.br.yaml --wait
 
+# Nodes here cached an earlier build published as ghcr.io/giovannirco/arith:1.
+# Always makes each start ask the registry for the digest behind the tag, so a
+# node never serves a stale image under a reused tag.
+image:
+  pullPolicy: Always
+
 env:
   ARITH_LOG_LEVEL: info
   ARITH_LOG_FORMAT: json
