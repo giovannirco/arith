@@ -1,0 +1,12 @@
+# Only what the image needs. Everything else stays out of the build context.
+*
+!Gemfile
+!Gemfile.lock
+!.ruby-version
+!config.ru
+!Rakefile
+!app/
+!bin/
+!config/
+!lib/
+!web/
